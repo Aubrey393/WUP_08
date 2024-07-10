@@ -98,3 +98,6 @@ summary.lm(weightmodel)
 The adjusted $r^2$ for WEIGHT is 0.75, which is good but not as good as the adjusted length~HEADLEN  $r^2$ is 0.85
 
 
+###Conclusion
+
+All the results concluded the best way to determine length based on a factor is doing length~HEADLEN, because the HEADLENmodel had the highest $r^2$ value which was 0.85.
