@@ -72,8 +72,29 @@ plot(LENGTH~SEX,data=bears)
 summary.lm(sexmodel)
 ```
 
-The adjusted $r^2$ for SEX is 0.01, which is way worse the the adjusted $r^2$ for chest =0.79
+The adjusted $r^2$ for SEX is 0.01, which is way worse the the adjusted $r^2$ for chest =0.79 
 
 ###Length based on HEADLEN
+
+```{r}
+headlenmodel<- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlenmodel)
+summary.lm(headlenmodel)
+```
+
+The adjusted length~HEADLEN is 0.85, so based on the results, these are the best results comparison that surpassed the previous best which was the adjusted $r^2$ for chest =0.79
+
+
+
+#Length Based on WEIGHT
+
+```{r}
+weightmodel<- lm(LENGTH~WEIGHT,data=bears)
+plot(LENGTH~WEIGHT,data=bears)
+abline(weightmodel)
+summary.lm(weightmodel)
+```
+The adjusted $r^2$ for WEIGHT is 0.75, which is good but not as good as the adjusted length~HEADLEN  $r^2$ is 0.85
 
 
