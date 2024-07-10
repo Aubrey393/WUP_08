@@ -42,4 +42,4 @@ abline(agemodel)
 summary.lm(agemodel)
 ```
 
-adjust $r^2$ for the age model is 0.51, this is less than the adjusted $r^2$ for neck so this model is not as efficient/good as the neck model. 
+adjust $r^2$ for the age model is 0.51, this is less than the adjusted $r^2$ for neck so this model is not as good as the neck model. 
